@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>asignatura</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button 
+      defaulHref="/"
+      text="volver"
+      color="primary"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Calidad</ion-label>
+    <ion-input #calidad></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Ingles</ion-label>
+    <ion-input #ingles></ion-input>
+  </ion-item>  
+  <ion-item>
+    <ion-label position="floating">Estadistica</ion-label>
+    <ion-input #estadistica></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Matematicas</ion-label>
+    <ion-input #matematicas></ion-input>
+  </ion-item>
+  <ion-button [routerLink]="['/logalumno']" (click)="Registrar()" color="danger">
+    <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+    Registrar
+  </ion-button>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
+    <ion-fab-list side="start">
+      <ion-fab-button [routerLink]="['/inicio']"><ion-icon name="arrow-back-outline"></ion-icon></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+<ion-datetime></ion-datetime>

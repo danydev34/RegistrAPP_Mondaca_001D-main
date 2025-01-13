@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="MostrarMenu()">
+        <!-- Al hacer click, va a llamar el método. El método se implementa en el archivo TypeScript -->
+        <ion-icon slot="icon-only" name="menu-outline" color="success"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="inicio">
+  <!-- Nuevo contenedor para el título separado del fondo -->
+  <div class="header-titulo">Registro Asistencia</div>
+
+  <div class="logo1">
+    <!-- Contenido del logo 1 -->
+  </div>
+  <div class="logo2">
+    <!-- Contenido del logo 2 -->
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <ion-list>
+    <ion-buttons slot="start">
+      <ion-button id="btnAsignatura" (click)="Asignatura()" expand="block" shape="round">
+        Asignatura
+      </ion-button>
+    </ion-buttons>
+    <br>
+    <ion-buttons slot="start">
+      <ion-button id="btnalumno" (click)="Alumno()" expand="block" shape="round">
+        Alumno
+      </ion-button>
+    </ion-buttons>
+  </ion-list>
+</ion-content>

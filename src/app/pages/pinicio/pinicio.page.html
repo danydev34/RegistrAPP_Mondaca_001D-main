@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>pinicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input name="email" #nombre></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Contraseña</ion-label>
+    <ion-input name="password" #apellido></ion-input>
+  </ion-item> 
+  <br> 
+  <br>
+  <div id="container">
+  <ion-button size="small">
+    <ion-icon name="enter-outline"></ion-icon>
+    Iniciar sesion
+    </ion-button>
+  </div>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button><ion-icon name="code"></ion-icon></ion-fab-button>
+      <ion-fab-list side="start">
+        <ion-fab-button><ion-icon [routerLink]="['/Asignatura']" name="person-add-outline"></ion-icon></ion-fab-button>
+        <ion-fab-button><ion-icon [routerLink]="['/inicio']" name="arrow-back-outline"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+</ion-content>

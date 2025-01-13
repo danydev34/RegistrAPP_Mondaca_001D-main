@@ -1,0 +1,72 @@
+ion-content {
+  --ion-background-color: #1e1e1e;
+
+  &::before {
+    content: 'Registro Asistencia';
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding-top: 70px;
+    font-size: 150%;
+    text-align: center; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(to bottom, #AF4CFD, #F195FD);
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("/assets/descarga.png");
+    background-size: cover;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 150px;
+    right: 80px;
+    z-index: 2;
+  }
+
+  ion-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 320px;
+  }
+
+  #btnAsignatura,
+  #btnalumno {
+    background-color: #AF4CFD;
+    color: white;
+    width: 200px;
+    font-weight: bold;
+    font-size: 150%;
+    text-transform: capitalize;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+  }
+}
+
+.header-titulo {
+  color: white;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: center;
+  position: absolute;
+  top: 20%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 2; 
+}
